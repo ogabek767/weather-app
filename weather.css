@@ -1,0 +1,214 @@
+.rang{
+    background-color: skyblue;
+}
+.color{
+    text-align: center;
+}
+#skyblue {
+    background-color: white;
+    max-width: 350px;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-size: 18px;
+    transition: 0.3s;
+    
+}
+
+.qidiruv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto;
+}
+.red{
+    text-align: center;
+}
+
+#white {
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+}
+
+#black {
+    padding: 10px 18px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0077b6;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#skyblue h1 {
+    font-size: 34px;
+    margin: 10px 0;
+}
+
+#black:hover {
+    background-color: #005f91;
+}
+
+#black:active {
+    transform: scale(0.95);
+}
+
+#skyblue:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#skyblue h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+#skyblue p {
+    margin: 12px 0;
+}
+
+@media (max-width: 480px) {
+    #skyblue {
+        max-width: 85%;
+        padding: 15px;
+    }
+
+    .qidiruv {
+        gap: 8px;
+        padding: 0 10px;
+    }
+
+    #white {
+        width: 100%;
+        min-width: 0;
+    }
+
+    #black {
+        padding: 10px 12px;
+    }
+}
+
+#forecast {
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.prognozlar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.kun {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    min-width: 140px;
+    transition: 0.3s;
+}
+
+.kun:hover {
+    transform: translateY(-5px);
+}
+
+body.dark{
+    background-color: #1e293b;
+    color: white;
+}
+
+body.dark #skyblue,
+body.dark .kun {
+    background-color: #334155;
+    color: white;
+}
+
+body.dark #darkMode {
+    background-color: #facc15;
+    color: black;
+}
+
+#darkMode {
+    display: block;
+    margin: 15px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+#darkMode:hover {
+    transform: scale(1.05);
+}
+
+body.dark #skyblue {
+    background-color: #334155;
+    color: white;
+}
+
+body.dark #forecast .kun {
+    background-color: #334155;
+    color: white;
+}
+
+#celsius,
+#fahrenheit {
+    padding: 10px 18px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+    color: #1e293b;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#celsius:hover,
+#fahrenheit:hover {
+    background-color: #0077b6;
+    color: white;
+}
+
+.harorat-tugmalari {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+#celsius.active,
+#fahrenheit.active {
+    background-color: #0077b6;
+    color: white;
+}
+
+#takliflar {
+    width: 290px;
+    margin: 0 auto;
+    background-color: white;
+    color: #1e293b;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#takliflar div {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#takliflar div:hover {
+    background-color: #0077b6;
+    color: white;
+}
